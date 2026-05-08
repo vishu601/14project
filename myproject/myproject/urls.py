@@ -4,7 +4,7 @@ from app1.views import *
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('StudentReg/',StudentReg),
+    path('StudentReg/', StudentReg, name='StudentReg'),
     path('showstudent/', showstudent, name='showstudent'),
     path('updatestudent/<int:id>/', updatestudent, name='updatestudent'),
     path('deletestudent/<int:id>/', deletestudent, name='deletestudent'),
